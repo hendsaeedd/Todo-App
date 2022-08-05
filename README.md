@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [View Live Demo](https://todo-app-drab-zeta-54.vercel.app)
+- Live Site URL: [View Live Demo](https://hendsaeedd.github.io/Todo-App/)
 
 ## My process
 
