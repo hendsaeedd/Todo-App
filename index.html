@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo app</title>
+
+</head>
+<body>
+    <main class="main">
+      <div class="container">
+        <div class="main-title-container">
+          <span class="todo-title">Todo</span>
+          <input type="checkbox" id="change-mode-checkbox" checked>
+          <label for="change-mode-checkbox" class="mode-change-icon">
+            <img src="images/icon-moon.svg" alt="">
+          </label>
+        </div>
+        <div class="enter-new-item">
+          <form class="create-task-form">
+            <span class="create-todo-btn"></span>
+            <input type="text" placeholder="Create a new todo..." class="create-task-input" id="create-task-input">
+          </form>
+        </div>
+        <div class="slides" id="slides">
+          <ul class="list-container" id="todo-list"></ul>
+
+          <ul class="list-container" id="active-list"></ul>
+
+          <ul class="list-container" id="completed-list"></ul>
+        </div>
+        
+        <div class="mobile-list-navigation">
+          <span id="item-count-mobile"></span>
+          <span id="clear-completed-mobile" class="nav-list-item">Clear Completed</span>
+        </div>
+
+        <div class="list-navigation">
+          <span id="item-count" class="hide-on-mobile"></span>
+          <div class="nav-list">
+            <span class="nav-list-item">
+              <input type="radio" name="nav-radio" id="show-all-radio" class="nav-radio" checked>
+              <label id="show-all" for="show-all-radio" class="nav-label">All</label>
+            </span>
+
+            <span class="nav-list-item">
+              <input type="radio" name="nav-radio" id="show-active-radio" class="nav-radio">
+              <label id="show-active" for="show-active-radio" class="nav-label">Active</label>
+            </span>
+
+            <span class="nav-list-item">
+              <input type="radio" name="nav-radio" id="show-completed-radio" class="nav-radio">
+              <label id="show-completed" for="show-completed-radio" class="nav-label">Completed</label>
+            </span>
+          </div>
+          
+          <span id="clear-completed-tasks" class="nav-list-item hide-on-mobile">Clear Completed</span>
+        </div>
+      </div>
+    </main>
+  <template id="task-template">
+    <li class="list-item">
+      <input type="checkbox" name="radio" class="check-complete-btn">
+      <label class="input-label">
+        <img src="images/icon-check.svg" alt="" class="icon-check">
+      </label>
+      <span class="task-name"></span>
+      <span class="delete-task-btn">
+        <img src="images/icon-cross.svg" alt="" class="delete">
+      </span>
+    </li>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
